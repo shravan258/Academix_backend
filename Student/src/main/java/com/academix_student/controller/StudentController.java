@@ -13,7 +13,7 @@ public class StudentController {
     @Autowired
     private StudentService studentservice;
 
-    @PostMapping("/addstudent")
+    @PostMapping("/student/addstudent")
     public StandardResponse addStudent(@RequestBody StudentRequest student){
         return studentservice.addStudent(student);
     }

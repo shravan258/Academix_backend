@@ -31,7 +31,7 @@ public class SecurityConfig {
     @Autowired
     private AuthenticationProvider authenticationProvider;
 
-    private static final List<String> ALLOWED_ORIGINS = List.of("http://localhost:8100","http://localhost:8300");
+    private static final List<String> ALLOWED_ORIGINS = List.of("http://localhost:8100","http://localhost:8300","http://localhost:4200");
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http

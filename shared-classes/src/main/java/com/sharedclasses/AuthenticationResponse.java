@@ -4,16 +4,16 @@ package com.sharedclasses;
 public class AuthenticationResponse {
     private String token;
 
-    private Integer teacherId;
+    private Integer Id;
 
     private Role role;
 
     public AuthenticationResponse() {
     }
 
-    public AuthenticationResponse(String token, Integer teacherId, Role role) {
+    public AuthenticationResponse(String token, Integer Id, Role role) {
         this.token = token;
-        this.teacherId = teacherId;
+        this.Id = Id;
         this.role = role;
     }
 
@@ -25,12 +25,12 @@ public class AuthenticationResponse {
         this.token = token;
     }
 
-    public Integer getTeacherId() {
-        return teacherId;
+    public Integer getId() {
+        return Id;
     }
 
-    public void setTeacherId(Integer teacherId) {
-        this.teacherId = teacherId;
+    public void setId(Integer Id) {
+        this.Id = Id;
     }
 
     public Role getRole() {
@@ -45,7 +45,7 @@ public class AuthenticationResponse {
     public String toString() {
         return "AuthenticationResponse{" +
                 "token='" + token + '\'' +
-                ", teacherId=" + teacherId +
+                ", Id=" + Id +
                 ", role=" + role +
                 '}';
     }
